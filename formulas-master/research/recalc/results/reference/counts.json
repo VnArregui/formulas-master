@@ -1,0 +1,310 @@
+{
+  "model": {
+    "data_nodes": 20,
+    "function_nodes": 16,
+    "instrumented": 16
+  },
+  "graph": {
+    "A2": {
+      "inputs": [
+        "INPUT_A"
+      ],
+      "outputs": [
+        "A2"
+      ],
+      "function": "function"
+    },
+    "A3": {
+      "inputs": [
+        "INPUT_B"
+      ],
+      "outputs": [
+        "A3"
+      ],
+      "function": "function"
+    },
+    "A3+A4": {
+      "inputs": [
+        "A3:A4"
+      ],
+      "outputs": [
+        "A3",
+        "A4"
+      ],
+      "function": "InvRangesAssembler"
+    },
+    "A3:A4": {
+      "inputs": [
+        "A3",
+        "A4"
+      ],
+      "outputs": [
+        "A3:A4"
+      ],
+      "function": "RangesAssembler"
+    },
+    "A4": {
+      "inputs": [
+        "INPUT_C"
+      ],
+      "outputs": [
+        "A4"
+      ],
+      "function": "function"
+    },
+    "B2": {
+      "inputs": [
+        "A2",
+        "A3"
+      ],
+      "outputs": [
+        "B2"
+      ],
+      "function": "CellWrapper"
+    },
+    "B3": {
+      "inputs": [
+        "A3",
+        "B2"
+      ],
+      "outputs": [
+        "B3"
+      ],
+      "function": "CellWrapper"
+    },
+    "B4": {
+      "inputs": [
+        "A3:A4",
+        "B2"
+      ],
+      "outputs": [
+        "B4"
+      ],
+      "function": "CellWrapper"
+    },
+    "C2": {
+      "inputs": [
+        "B2",
+        "B3",
+        "D2"
+      ],
+      "outputs": [
+        "C2"
+      ],
+      "function": "CellWrapper"
+    },
+    "C3": {
+      "inputs": [
+        "A2",
+        "C2",
+        "D3"
+      ],
+      "outputs": [
+        "C3"
+      ],
+      "function": "CellWrapper"
+    },
+    "C4": {
+      "inputs": [
+        "B3",
+        "C2",
+        "D4"
+      ],
+      "outputs": [
+        "C4"
+      ],
+      "function": "CellWrapper"
+    },
+    "D3": {
+      "inputs": [
+        "D2"
+      ],
+      "outputs": [
+        "D3"
+      ],
+      "function": "CellWrapper"
+    },
+    "D4": {
+      "inputs": [
+        "D3"
+      ],
+      "outputs": [
+        "D4"
+      ],
+      "function": "CellWrapper"
+    },
+    "INPUT_A": {
+      "inputs": [
+        "A2"
+      ],
+      "outputs": [
+        "INPUT_A"
+      ],
+      "function": "CellWrapper"
+    },
+    "INPUT_B": {
+      "inputs": [
+        "A3"
+      ],
+      "outputs": [
+        "INPUT_B"
+      ],
+      "function": "CellWrapper"
+    },
+    "INPUT_C": {
+      "inputs": [
+        "A4"
+      ],
+      "outputs": [
+        "INPUT_C"
+      ],
+      "function": "CellWrapper"
+    }
+  },
+  "E1": {
+    "r1": 12,
+    "r2": 12,
+    "cellwrapper_r1": 11,
+    "cellwrapper_r2": 11,
+    "inner_r1": 11,
+    "inner_r2": 11,
+    "inner_cells_instrumented": 11,
+    "inner_nodes_total": 11,
+    "same_nodes": true,
+    "cache_between_calls": false
+  },
+  "E2": {
+    "D2": {
+      "affected_count": 5,
+      "affected": [
+        "C2",
+        "C3",
+        "C4",
+        "D3",
+        "D4"
+      ],
+      "unaffected": [
+        "A2",
+        "A3",
+        "A3+A4",
+        "A3:A4",
+        "A4",
+        "B2",
+        "B3",
+        "B4",
+        "INPUT_A",
+        "INPUT_B",
+        "INPUT_C"
+      ],
+      "executed_total": 12,
+      "executed_affected": [
+        "C2",
+        "C3",
+        "C4",
+        "D3",
+        "D4"
+      ],
+      "executed_unaffected": [
+        "A3:A4",
+        "B2",
+        "B3",
+        "B4",
+        "INPUT_A",
+        "INPUT_B",
+        "INPUT_C"
+      ],
+      "verdict": "NO INCREMENTAL"
+    },
+    "A2": {
+      "affected_count": 8,
+      "affected": [
+        "A2",
+        "B2",
+        "B3",
+        "B4",
+        "C2",
+        "C3",
+        "C4",
+        "INPUT_A"
+      ],
+      "unaffected": [
+        "A3",
+        "A3+A4",
+        "A3:A4",
+        "A4",
+        "D3",
+        "D4",
+        "INPUT_B",
+        "INPUT_C"
+      ],
+      "executed_total": 12,
+      "executed_affected": [
+        "B2",
+        "B3",
+        "B4",
+        "C2",
+        "C3",
+        "C4",
+        "INPUT_A"
+      ],
+      "executed_unaffected": [
+        "A3:A4",
+        "D3",
+        "D4",
+        "INPUT_B",
+        "INPUT_C"
+      ],
+      "verdict": "NO INCREMENTAL"
+    }
+  },
+  "E3": {
+    "same_object": false,
+    "dsp_solution_is_last": true,
+    "previous_untouched": true
+  },
+  "E4": {
+    "no_call_executions": 0,
+    "reachable_data_nodes": 20,
+    "computed_data_nodes": 20,
+    "reachable_equals_computed": true,
+    "executed_function_nodes": 12,
+    "A2_default_initial_dist": "inf(inf=1, num=0)",
+    "A2_dist_without_input": "inf(inf=1, num=0.0)",
+    "A2_dist_with_input": "0.0"
+  },
+  "E5": {
+    "first": 10,
+    "second": 10,
+    "full": 12,
+    "needed_for_C4": 14,
+    "nodes": [
+      "='[excel.xlsx]DATA'!A2",
+      "='[excel.xlsx]DATA'!A3",
+      "='[excel.xlsx]DATA'!A3:A4",
+      "='[excel.xlsx]DATA'!A4",
+      "=('[excel.xlsx]DATA'!A2 + '[excel.xlsx]DATA'!A3)",
+      "=('[excel.xlsx]DATA'!B2 - '[excel.xlsx]DATA'!A3)",
+      "=(('[excel.xlsx]DATA'!B2 / '[excel.xlsx]DATA'!B3) + '[excel.xlsx]DATA'!D2)",
+      "=(('[excel.xlsx]DATA'!B3 ^ '[excel.xlsx]DATA'!C2) + '[excel.xlsx]DATA'!D4)",
+      "=(1 + '[excel.xlsx]DATA'!D2)",
+      "=(1 + '[excel.xlsx]DATA'!D3)"
+    ],
+    "skipped": [
+      "=(('[excel.xlsx]DATA'!C2 * '[excel.xlsx]DATA'!A2) + '[excel.xlsx]DATA'!D3)",
+      "=MAX('[excel.xlsx]DATA'!A3:A4, '[excel.xlsx]DATA'!B2)"
+    ]
+  },
+  "control": {
+    "values": {
+      "B2": 8.0,
+      "B3": 2.0,
+      "B4": 8.0,
+      "C2": 5.0,
+      "C3": 12.0,
+      "C4": 35.0,
+      "D3": 2.0,
+      "D4": 3.0
+    },
+    "matches_workbook": true
+  }
+}

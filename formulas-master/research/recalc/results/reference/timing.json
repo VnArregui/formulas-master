@@ -1,0 +1,146 @@
+{
+  "reps": 3,
+  "build": {
+    "loads": 29.181762300000628,
+    "finish": 0.9727550999996311,
+    "data_nodes": 32121,
+    "function_nodes": 27680
+  },
+  "counts": {
+    "sin inputs": {
+      "affected": 0,
+      "invoked": 25274,
+      "invoked_unaffected": null
+    },
+    "1 celda": {
+      "affected": 149,
+      "invoked": 25274,
+      "invoked_unaffected": 25125
+    },
+    "20 celdas": {
+      "affected": 2966,
+      "invoked": 25274,
+      "invoked_unaffected": 22308
+    }
+  },
+  "timings": {
+    "calculate() sin inputs": {
+      "median": 12.737217599998985,
+      "min": 10.990443299999242,
+      "max": 13.261322000000291,
+      "samples": [
+        12.7372,
+        10.9904,
+        13.2613
+      ]
+    },
+    "calculate() repetido": {
+      "median": 12.856631300001027,
+      "min": 10.709878499999832,
+      "max": 13.484338199999911,
+      "samples": [
+        12.8566,
+        10.7099,
+        13.4843
+      ]
+    },
+    "calculate(inputs=1 celda)": {
+      "median": 12.912917900001048,
+      "min": 10.76248680000026,
+      "max": 13.433760699999766,
+      "samples": [
+        12.9129,
+        10.7625,
+        13.4338
+      ]
+    },
+    "calculate(inputs=20 celdas)": {
+      "median": 13.166389600000912,
+      "min": 10.806529100000262,
+      "max": 13.44913330000054,
+      "samples": [
+        13.1664,
+        10.8065,
+        13.4491
+      ]
+    },
+    "calculate(outputs=1 celda)": {
+      "median": 0.0001421999986632727,
+      "min": 0.00012959999912709463,
+      "max": 0.00021700000070268288,
+      "samples": [
+        0.0002,
+        0.0001,
+        0.0001
+      ]
+    },
+    "calculate(outputs=celda profunda)": {
+      "median": 0.006531199998789816,
+      "min": 0.006479000001490931,
+      "max": 0.006999899998845649,
+      "samples": [
+        0.007,
+        0.0065,
+        0.0065
+      ]
+    },
+    "calculate(inputs+outputs, celda profunda)": {
+      "median": 0.006501400001070579,
+      "min": 0.006486899999799789,
+      "max": 0.006786899999497109,
+      "samples": [
+        0.0068,
+        0.0065,
+        0.0065
+      ]
+    }
+  },
+  "compile": {
+    "build": 4.2833689999988565,
+    "call": {
+      "median": 4.160000025876798e-05,
+      "min": 3.97000003431458e-05,
+      "max": 5.400000009103678e-05,
+      "samples": [
+        0.0001,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "spread_ratio": 0.03259602769174452,
+  "input_cells_used": {
+    "one": [
+      "'[test.xlsx]EXTRA'!AB1"
+    ],
+    "twenty": [
+      "'[test.xlsx]EXTRA'!AB1",
+      "'[test.xlsx]EXTRA'!AC1",
+      "'[test.xlsx]EXTRA'!AD1",
+      "'[test.xlsx]EXTRA'!AE1",
+      "'[test.xlsx]EXTRA'!AF1",
+      "'[test.xlsx]EXTRA'!AG1",
+      "'[test.xlsx]EXTRA'!AH1",
+      "'[test.xlsx]EXTRA'!AI1",
+      "'[test.xlsx]EXTRA'!AJ1",
+      "'[test.xlsx]EXTRA'!AK1",
+      "'[test.xlsx]EXTRA'!AL1",
+      "'[test.xlsx]EXTRA'!AM1",
+      "'[test.xlsx]EXTRA'!AN1",
+      "'[test.xlsx]EXTRA'!AO1",
+      "'[test.xlsx]EXTRA'!AP1",
+      "'[test.xlsx]EXTRA'!AQ1",
+      "'[test.xlsx]EXTRA'!AR1",
+      "'[test.xlsx]EXTRA'!AA1",
+      "'[test.xlsx]EXTRA'!Z1",
+      "'[test.xlsx]EXTRA'!Y1"
+    ]
+  },
+  "output_cell_used": {
+    "shallow": "'[test.xlsx]123'!A1",
+    "deep": "'[test.xlsx]CORE'!U5",
+    "deep_dist": "inf(inf=1, num=18.0)"
+  }
+}

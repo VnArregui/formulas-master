@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: >-
+  Si usas este analisis, citalo con los metadatos de este fichero. Las
+  conclusiones sobre recalculo se limitan a la instantanea de formulas 1.3.4
+  estudiada (huella SHA-256 del arbol
+  94acf93e3137aa68408bf5d0b2238e34eda959e97c50eb2a58d351bbb50a9c9d) ejecutada
+  sobre schedula 1.6.15.
+type: software
+title: >-
+  Analisis del recalculo, funcionamiento y alcance de la biblioteca formulas
+  (Excel a Python)
+version: v1.0-tesis
+# PENDIENTE: completar con nombre y apellidos reales del autor de la tesis.
+authors:
+  - alias: VnArregui
+keywords:
+  - formulas
+  - schedula
+  - excel
+  - dependency graph
+  - incremental recalculation
+references:
+  - type: software
+    title: formulas
+    version: 1.3.4
+    authors:
+      - family-names: Arcidiacono
+        given-names: Vincenzo
+    repository-code: https://github.com/vinci1it2000/formulas
+    license: EUPL-1.1
+    notes: >-
+      Analizada a partir de una instantanea sin metadatos de git, incluida en
+      formulas-master/; su equivalencia con la release 1.3.4 publicada no esta
+      verificada.
+  - type: software
+    title: schedula
+    version: 1.6.15
+    authors:
+      - family-names: Arcidiacono
+        given-names: Vincenzo
+    repository-code: https://github.com/vinci1it2000/schedula
+    license: EUPL-1.1

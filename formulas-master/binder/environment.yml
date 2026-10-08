@@ -1,0 +1,20 @@
+name: formulas
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  # pull in all non-dev `extra` dependencies as of last release
+  - formulas-all
+  # a useful extra from schedula
+  - multiprocess
+  # baseline interactive environment
+  - jupyterlab >=3,<4
+  - ipython >=7.20,<8
+  # runtime
+  - python >=3.9,<3.10
+  - pip
+  # icky pins
+  - parso ==0.8.*
+  - pip:
+    # gah, don't even want, but `pip check` complains otherwise :(
+    - jupyter-telemetry >=0.1.0

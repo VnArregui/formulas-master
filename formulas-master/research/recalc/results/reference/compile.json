@@ -1,0 +1,144 @@
+{
+  "E6": {
+    "type": "schedula.utils.dsp.DispatchPipe",
+    "pipe_len": 11,
+    "pipe_function_nodes": [
+      "B2",
+      "C2",
+      "C4"
+    ],
+    "defaults_from_file": {
+      "D2": "1",
+      "A3": "6"
+    },
+    "frozen_at_compile": {
+      "D4": "Array([[3.0]], dtype=object)"
+    },
+    "runs": [
+      {
+        "args": [
+          3,
+          1
+        ],
+        "executions": 3,
+        "nodes": [
+          "B2",
+          "C2",
+          "C4"
+        ],
+        "C2": 10.0,
+        "C4": 4.0
+      },
+      {
+        "args": [
+          3,
+          1
+        ],
+        "executions": 3,
+        "nodes": [
+          "B2",
+          "C2",
+          "C4"
+        ],
+        "C2": 10.0,
+        "C4": 4.0
+      },
+      {
+        "args": [
+          3,
+          1
+        ],
+        "executions": 3,
+        "nodes": [
+          "B2",
+          "C2",
+          "C4"
+        ],
+        "C2": 10.0,
+        "C4": 4.0
+      },
+      {
+        "args": [
+          3,
+          2
+        ],
+        "executions": 3,
+        "nodes": [
+          "B2",
+          "C2",
+          "C4"
+        ],
+        "C2": 5.5,
+        "C4": 48.254833995939045
+      },
+      {
+        "args": [
+          5,
+          2
+        ],
+        "executions": 3,
+        "nodes": [
+          "B2",
+          "C2",
+          "C4"
+        ],
+        "C2": 6.5,
+        "C4": 93.50966799187809
+      },
+      {
+        "args": [
+          7,
+          4
+        ],
+        "executions": 3,
+        "nodes": [
+          "B2",
+          "C2",
+          "C4"
+        ],
+        "C2": 4.25,
+        "C4": 365.03867196751236
+      },
+      {
+        "args": [
+          3,
+          1
+        ],
+        "executions": 3,
+        "nodes": [
+          "B2",
+          "C2",
+          "C4"
+        ],
+        "C2": 10.0,
+        "C4": 4.0
+      }
+    ],
+    "constant_executions": true,
+    "b2_rerun_when_only_b3_changes": true,
+    "solution_reused_in_place": true,
+    "calculate_executions": 8,
+    "calculate_nodes": [
+      "A3:A4",
+      "B2",
+      "C2",
+      "C4",
+      "D3",
+      "D4",
+      "INPUT_B",
+      "INPUT_C"
+    ],
+    "extra_in_calculate": [
+      "A3:A4",
+      "D3",
+      "D4",
+      "INPUT_B",
+      "INPUT_C"
+    ],
+    "nodes_shared_with_model": [
+      "B2",
+      "C2",
+      "C4"
+    ]
+  }
+}

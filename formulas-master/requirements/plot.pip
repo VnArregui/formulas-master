@@ -1,0 +1,6 @@
+-r web.pip
+
+regex
+graphviz
+Pygments
+docutils

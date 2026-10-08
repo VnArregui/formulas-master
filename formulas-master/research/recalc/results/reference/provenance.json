@@ -1,0 +1,11 @@
+{
+  "git_metadata": false,
+  "declared_version": "1.3.4",
+  "declared_updated": "2026-03-11 18:35:00",
+  "files_hashed": 49,
+  "tree_sha256": "94acf93e3137aa68408bf5d0b2238e34eda959e97c50eb2a58d351bbb50a9c9d",
+  "modified_after_extraction": [],
+  "install_mode": "editable (pip install -e .)",
+  "schedula": "1.6.15",
+  "python": "3.13.5"
+}
