@@ -1,0 +1,4 @@
+# Entregar los bytes exactos en cualquier sistema: sin conversion de finales
+# de linea. Necesario para que la huella SHA-256 de la instantanea
+# (94acf93e...) sea la misma en cualquier clon.
+* -text
